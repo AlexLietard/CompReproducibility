@@ -1,0 +1,15 @@
+{
+  "hash": "a00b6efb8b0f7ec12f789626d58293e4",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: JC_Kobe\nauthors:\n  - name: Norah Jones\n    affiliation: The University\n    roles: writing\n    corresponding: true\nbibliography: references.bib\n---\n\n## Section\nThis is a simple placeholder for the manuscript's main document [@knuth84].\n\n\n::: {.cell}\n\n```{.r .cell-code .hidden}\na <- 1+1\n```\n:::\n\n\n2\n\nDnqsiojfdSDFF\n<!-- qd,pqsokdP? Will it appear?? -->\nfkjfdpqzokef\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
