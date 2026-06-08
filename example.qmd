@@ -1,0 +1,47 @@
+---
+title: CompReproducibility
+authors:
+  - name: Alex
+    affiliation: KU Leuven
+    roles: writing
+    corresponding: true
+bibliography: references.bib
+csl: apa.csl
+---
+
+```{r results="hide"}
+source("./load_environment.R")
+```
+
+## Introduction
+
+Metacognition important, bla bla bla.<br>
+@Carpenter_etal_2019 tried to show that they could improve metacognitive _monitoring_ but their positive results seems to be mostly explained by experimental confounds [@Rouy_etal_2022 ; @Soto_etal_2024]. @Haddara_Rahnev_2022 showed tho that it is difficult with type-I feedback.
+
+## Methods
+
+We collected `r unique(df$id)` participants, splitted in a training group and a control group.
+<!-- Kobe: indicate the informed consent --> 
+
+## Results
+
+```{r}
+test <- lm(value ~ group, data = df)
+```
+
+There is a significant effect of the training on metacognitive monitoring `r lm_output(test, "grouptraining")`, with the metacognitive training group having a higher average `r value_output(mean(df$value[df$group == "training"]), sd(df$value[df$group == "training"]))` than the control group `r value_output(mean(df$value[df$group == "non_training"]), sd(df$value[df$group == "non_training"]))` (see @fig-plotDiff). The metacognitive monitoring score was based on the M-ratio (@eq-mratio), which is the ratio of meta-d' to d', where meta-d' is a measure of metacognitive sensitivity and d' is a measure of task performance:
+$$
+M-ratio = \frac{meta-d'}{d'}
+$$ {#eq-mratio}
+
+```{r}
+#| label: fig-plotDiff
+#| fig.cap: "Metacognitive monitoring scores by group"
+ggplot(df, aes(x = group, y = value)) +
+  geom_boxplot() +
+  geom_jitter(width = 0.2) +
+  labs(x = "Group",
+       y = "Metacognitive monitoring score") +
+  theme_minimal()
+```
+
