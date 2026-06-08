@@ -48,3 +48,4 @@ The dot means the current directory, it allows thus to render your project (you 
     - Change the citekey format 
         - Where to change it in Zotero https://forums.zotero.org/discussion/118879/change-default-citation-key-when-importing-files
         - The possible ways to change it https://retorque.re/zotero-better-bibtex/citing/. My way is "authEtal2(sep=_)+ "_" + year"
+- Bibliography: https://github.com/citation-style-language/styles
