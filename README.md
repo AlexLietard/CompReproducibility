@@ -17,6 +17,8 @@ renv::snapshot()
 renv::restore()
 ```
 
+The goal of this repository is to make you try analyzing the data presents in data.csv and create a reproducible report with the results. An example of what you can do is in example.qmd, but you can do whatever you want with the data and the report, as long as you use the features of quarto and that you can share it with others.
+
 ## Features 
 
 - \_ [text] \_ to put in italics
