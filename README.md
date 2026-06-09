@@ -37,8 +37,6 @@ When you finish writing your document, you can use the following command to rend
 quarto render index.qmd
 ```
 
-The dot means the current directory, it allows thus to render your project (you can also put just your filename).
-
 ## References
 
 - More information about Quarto [Quarto Documentation](https://quarto.org/)
