@@ -15,7 +15,7 @@ source("./load_environment.R")
 
 ## Introduction
 
-Metacognition important, bla bla bla.<br>
+Metacognition important, bla blo bla.<br>
 @Carpenter_etal_2019 tried to show that they could improve metacognitive _monitoring_ but their positive results seems to be mostly explained by experimental confounds [@Rouy_etal_2022 ; @Soto_etal_2024]. @Haddara_Rahnev_2022 showed tho that it is difficult with type-I feedback.
 
 ## Methods
