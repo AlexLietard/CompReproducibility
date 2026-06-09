@@ -34,7 +34,7 @@ The goal of this repository is to make you try analyzing the data presents in da
 When you finish writing your document, you can use the following command to render it:
 
 ```cmd
-quarto render .
+quarto render index.qmd
 ```
 
 The dot means the current directory, it allows thus to render your project (you can also put just your filename).
